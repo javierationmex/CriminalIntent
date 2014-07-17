@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.javiergarrido.android.criminalintent" >
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.Camera" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +22,11 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY"
               android:value=".CrimeListActivity" />
         </activity>
+        <activity android:name=".CrimeCameraFragment$CrimeCameraActivity"
+                  android:screenOrientation="landscape"
+                  android:label="@string/app_name" >
+        </activity>
+
     </application>
 
 </manifest>
